@@ -1,3 +1,4 @@
-name = 'Nurlan'
-
-print(f'Hello {name}')
+n = 'Nurlan'
+def greeting(n):
+    print(f'Hello {n}')
+greeting(n)
