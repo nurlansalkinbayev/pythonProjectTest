@@ -1,4 +1,10 @@
-n = 'Nurlan'
-def greeting(n):
-    print(f'Hello {n}')
-greeting(n)
+import re
+
+text = "Python is an amazing programming language."
+pattern = "amazing"
+
+match = re.search(pattern, text)
+if match:
+    print("Совпадение найдено:", match.group())
+else:
+    print("Совпадение не найдено")
