@@ -1,4 +1,5 @@
 import re
+import random
 
 text_to_search = '''
 abcdefghijklmnopqurtuvwxyz
@@ -28,9 +29,16 @@ Mr. T
 
 sentence = 'Start a sentence and then bring it to an end'
 
-pattern = re.compile(r'\d{3}.\d{3}.\d{4}')
+pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')
 
 matches = pattern.finditer(text_to_search)
 
-for match in matches:
-    print(match)
+# for match in matches:
+#     print(match)
+# Создание списка чисел из заданного интервала с указанным количеством
+deck = list(range(1000, 9999))
+hand = random.sample(deck, k=28)
+# Сумма чисел в списке
+hand_sum = sum(hand)
+print(hand)
+print(hand_sum)
