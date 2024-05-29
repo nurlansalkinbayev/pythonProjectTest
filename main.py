@@ -1,10 +1,3 @@
-import re
-
-text = "Python is an amazing programming language."
-pattern = ""
-
-match = re.search(pattern, text)
-if match:
-    print("Совпадение найдено:", match.group(), len(pattern))
-else:
-    print("Совпадение не найдено")
+text = input()
+word_count = text.count(' ') + 1
+print(word_count)
