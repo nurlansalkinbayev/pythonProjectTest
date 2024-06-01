@@ -27,7 +27,7 @@ Mrs. Robinson
 Mr. T
 '''
 
-sentence = 'Start a sentence and then bring it to an end'
+sentence = 'Start A sentence and then bring it to an end'
 
 pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')
 
